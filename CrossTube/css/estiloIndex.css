@@ -4,18 +4,24 @@ body{
     background-repeat:no-repeat;
 }
 
+img{
+    margin-left: 50px;
+    margin-top: 10px;
+}
+
 #uno { 
 
 font: bold 2.5em verdana, sans-serif; 
 text-align: left;
-margin-left: 200px;
-padding-left: 10px; 
+margin-left: 20px;
+margin-top: 40px;
 color: red; 
 }
 #dos { 
 
 font: bold 2.5em verdana, sans-serif; 
 text-align: left; 
+margin-top: 40px;
 color: white; 
 }
 
@@ -28,22 +34,19 @@ width: 1900px;
 #header { 
 
 background-color: #293336; 
-padding: 0px ; 
 
 }
 
-nav { 
-text-align: left;
-padding-bottom: 20px; }
 
 nav li {
     display: inline; 
 list-style: none;
-}
+
+}   
 
 nav li #presentacion{ 
-margin-left: 500px;
-padding: 0px; font: bold 18px Courier, monospace ;
+margin-left: 435px;
+font: bold 18px Courier, monospace ;
     padding-left: 10px;
     padding-right: 10px;     
 cursor:default;
@@ -51,25 +54,27 @@ cursor:default;
 
 nav li #documentacion{ 
 margin-left: 135px;
-padding: 0px; font: bold 18px Courier, monospace ; 
+font: bold 18px Courier, monospace ; 
     padding-left: 10px;
     padding-right: 10px;
+
 cursor:default;
 }
 
 nav li #formulario{ 
 margin-left: 135px;
-padding: 0px; font: bold 18px Courier, monospace ; 
-    padding-left: 10px;
-    padding-right: 10px;
+font: bold 18px Courier, monospace ; 
+padding-left: 10px;
+padding-right: 10px;
 cursor:default;
 }
 
 nav li #descarga{ 
 margin-left: 135px;
-padding: 0px; font: bold 18px Courier, monospace ; 
+font: bold 18px Courier, monospace ; 
     padding-left: 10px;
     padding-right: 10px;
+
 cursor:default;
 }
 
@@ -79,6 +84,7 @@ nav{
 }
 
 nav #documentacion,#presentacion,#formulario,#descarga{
+    margin-top: 50px;
     color: #FFF;
     text-decoration: none;
     background-color: transparent;
@@ -94,45 +100,6 @@ nav #documentacion:hover,#presentacion:hover,#formulario:hover,#descarga:hover{
     padding-bottom: 35px;
 }
 
-#content { 
-
-float: left; 
-width: 660px; 
-margin: 20px; 
-}
-
-#aside {
-
-float: right; 
-width: 175px; 
-margin: 20px 0px; 
-padding: 20px;
-background: #ffcb70; 
-}
-
-#footer { 
-
-clear: both; 
-text-align: center; 
-padding: 20px; 
-border-top: 2px solid #e87f07; 
-}
-
-.time { 
-
-color: #e87f07; 
-}
-
-.figure { 
-
-text-align: center;
-}
-
-.figure .figcaption { 
-
-font: italic 1em verdana, sans-serif; 
-}
-*/
 
 
 @media screen and (min-width: 1200px){
