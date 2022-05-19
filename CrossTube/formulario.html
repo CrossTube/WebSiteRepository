@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="ToniToledo" content="LM">
+</head>
+<body>
+	<FORM action = "mailto: cenedic@ucol.mx" method = post >
+
+Tu Nombre:<INPUT style="background-color: dimgrey;color: blanchedalmond;"type = text name = nombre size = 30 >
+Tu Clave: <INPUT type = password name = clave size = 8 >
+
+	<P>
+
+Archivos a Enviar:
+		<INPUT type = checkbox name = archivo value = "Manual" checked  > Manual de Html
+		<INPUT type = checkbox name = archivo value ="Mapthis" checked> Programa Mapthis
+		<INPUT type = checkbox name = archivo value ="Help" > Archivo de Ayuda
+		<INPUT type = checkbox name = archivo value="Programador profesional">Programador de Aplicaciones
+	<P>
+
+Tu Edad :
+		<INPUT type = radio name = edad value = "-20" > Menos de 20 años
+		<INPUT type = radio name = edad value = "20-40" > Entre 20 y 40 años
+		<INPUT type = radio name = edad value = "+40" > Mas de 40 años
+		<input type=radio name=edad value="+65"> Mas de 65 añacos
+	<P>
+
+	<INPUT type = hidden name = lugar value = "pagina personal" >
+
+Como encontraste mi página :
+
+	<SELECT style="background-color:aliceblue; color="eed: lightsteelblue; name = donde >
+		<OPTION>De casualidad
+		<OPTION>Por el buscador Ole
+		<OPTION>Por el buscador Yahoo
+		<OPTION>Me la comentaron
+		<option>Gracias a YOUTUBE
+		<option>
+
+	</SELECT>
+	<P>
+	Tus Comentarios:
+	<BR>
+		<TEXTAREA style="background-color: ghostwhite;"name = comentario rows = 5 cols = 150 wrap = virtual></TEXTAREA>
+
+	<P>
+		Comentario para ayudarnos en nuestra página:
+		<br>
+		<textarea style="background-color: lightskyblue;"name = comentario rows = 4 cols =100 wrap=virtual></textarea>
+	<P>
+		<INPUT style="color:blueviolet;" type = submit value = "Enviar" >
+		<INPUT style="color:darkred; "type = reset value = "Borrar" >
+	</FORM>
+</body>
