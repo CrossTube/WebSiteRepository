@@ -29,6 +29,11 @@
   color: black;
 }
 @media (min-width: 992px) {
+
+  .navbar{
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
   #toolbar {
     padding-top: 0;
     padding-bottom: 0;
@@ -75,27 +80,13 @@
   }
 }
 
-#uno { 
-font: bold 2.5em verdana, sans-serif; 
-text-align: left;
-margin-left: 20px;
-margin-top: 40px;
-color: rgb(255, 0, 0); 
-font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-}
-
-#dos { 
-font: bold 2.5em verdana, sans-serif; 
-text-align: left; 
-margin-top: 40px;
-color: white;
-font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-}
 
 #eslogan{
+  margin-left: 100px;
+  padding-top: 50px;
   font: 2.5em; 
   text-align: center;
-  color: rgb(197, 14, 14);
+  color: #2C1414 ;
   font-size: 3.25rem;
   font-weight: 700;
   line-height: 3.25rem;
@@ -105,16 +96,16 @@ font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Robot
 }
 
 #Warriors{
-  color: yellow;
+  color: red;
   font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
-#Presentation {
+#Presentation { 
   width: 100%;
   height: auto;
   min-height: 35rem;
   padding: 15rem 0;
-  background: url("../media/fondo.jpg");
+  background: url("../media/Roca.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -357,6 +348,10 @@ section#Us{
 
 }
 
+.team-member{
+    margin-left: 350px;
+}
+
 .btn-check {
   position: absolute;
   clip: rect(0, 0, 0, 0);
@@ -373,3 +368,14 @@ section#Us{
     scroll-behavior: smooth;
   }
 }
+
+::-webkit-input-placeholder{
+    color:  #a8a8a8;
+  }
+  ::-webkit-textare-placeholder{
+    color:  #a8a8a8;
+  }
+
+  span{
+    color: red;
+  }

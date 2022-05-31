@@ -20,8 +20,8 @@
                 <ul class="navbar-nav ms-auto text-uppercase">
                     <li class="nav-item"><a class="nav-link" href="#Presentation">Presentation</a></li>
                     <li class="nav-item"><a class="nav-link" href="#Documentation">Documentation</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#Us">Us</a></li>
                     <li class="nav-item"><a class="nav-link" href="#Form">Form</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#Us">Us</a></li>
                     <li class="nav-item"><a class="nav-link" href="#Downloads">Downloads</a></li>
                     
                 </ul>
@@ -30,14 +30,14 @@
     </nav>
     <div id="Presentation">
         <div class="row container-fluid px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
-            <div>
-                <div class="text-center">
-                    <a id="uno" class="navbar-brand">Cross</a><a id="dos">Tube</a>
-                    <p id="eslogan">Only <a id = "Warriors">Warriors</a> use this app</p>
-                </div>
-            </div>
+            
         </div>
     </div>
+    <div>
+         <div class="text-center">
+                    <p id="eslogan">Only <a id = "Warriors">Warriors</a> use this app</p>
+           </div>
+     </div>
     <section id="Documentation">
         <div class="container">
             <div class="text-center">
@@ -87,25 +87,25 @@
                 <div class="row align-items-stretch mb-5">
                     <div class="col-md-6">
                         <div class="form-group">
-                            <!-- Name input-->
-                            <input class="form-control" id="name" type="text" placeholder="Your Name *" data-sb-validations="required" />
+                            <span for="obligatorio">*</span>
+                            <input class="form-control" id="name" type="text" placeholder="Your Name *" data-sb-validations="required" required="obligatorio" />
                             <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
                         </div>
                         <div class="form-group">
-                            <!-- Email address input-->
-                            <input class="form-control" id="email" type="email" placeholder="Your Email *" data-sb-validations="required,email" />
-                            <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
+                            <span for="obligatorio">*</span>
+                            <input class="form-control" id="email" type="email" placeholder="Your Email *" data-sb-validations="required,email" required="obligatorio" />
                             <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
                         </div>
                         <div class="form-group mb-md-0">
-                            <!-- Phone number input-->
-                            <input class="form-control" id="phone" type="tel" placeholder="Your Phone *" data-sb-validations="required" />
+                            <span for="obligatorio">*</span>
+                            <input class="form-control" id="phone" type="tel" placeholder="Your Phone *" data-sb-validations="required" required="obligatorio" />
                             <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="form-group form-group-textarea mb-md-0">
-                            <textarea class="form-control" id="message" placeholder="Your Message *" data-sb-validations="required"></textarea>
+                        	<span for="obligatorio">*</span>
+                            <textarea class="form-control" id="message" placeholder="Your Message *" data-sb-validations="required" required="obligatorio"></textarea>
                             <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
                         </div>
                     </div>
@@ -140,12 +140,7 @@
                         <h4>Alejandro Valero</h4>
                     </div>
                 </div>
-                <div class="col-lg-4">
-                    <div class="team-member">
-                        <img class="mx-auto rounded-circle" src="assets/img/team/3.jpg" alt="..." />
-                        <h4>Alejandro Redkin</h4>
-                    </div>
-                </div>
+              
             </div>
         </div>
     </section>
