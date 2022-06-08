@@ -1,5 +1,3 @@
-
-
 #toolbar {
   min-height: 3.5rem;
   background-color: rgb(255, 255, 255);
@@ -28,6 +26,13 @@
   background-color: transparent;
   color: black;
 }
+
+.logo{
+  width: 8%;
+  height: 8%;
+}
+
+
 @media (min-width: 992px) {
 
   .navbar{
@@ -102,14 +107,15 @@
 
 #Presentation { 
   width: 100%;
-  height: auto;
+  height: 200%;
   min-height: 35rem;
   padding: 15rem 0;
   background: url("../media/Roca.jpg");
   background-position: center;
+  background-attachment: contain;
+  background-size: 100vw 100vh;
   background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-size: cover;
+
 }
 
 section#Documentation .section-heading {
@@ -120,7 +126,6 @@ section#Documentation .section-heading {
 #Documentation{
   font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
-
 .docu {
   position: relative;
   padding: 0;
@@ -130,7 +135,7 @@ section#Documentation .section-heading {
   position: absolute;
   top: 0;
   bottom: 0;
-  left: 40px;
+  left: 100px;
   width: 2px;
   margin-left: -1.5px;
   content: "";
@@ -179,7 +184,23 @@ section#Documentation .section-heading {
   color: white;
 
 }
+.docu > li .docuImg2 {
+  position: absolute;
+  z-index: 100;
+  left: 0;
+  width: 80px;
+  height: 80px;
+  margin-left: 0;
+  text-align: center;
+  color: white;
+
+}
 .docu > li .docuImg h4, .docu > li .docuImg .h4 {
+  font-size: 10px;
+  line-height: 14px;
+  margin-top: 12px;
+}
+.docu > li .docuImg2 h4, .docu > li .docuImg2 .h4 {
   font-size: 10px;
   line-height: 14px;
   margin-top: 12px;
@@ -214,6 +235,7 @@ section#Documentation .section-heading {
 .docu .docuBody > ul,
 .docu .docuBody > p {
   margin-bottom: 0;
+  margin-left: 0px;
 }
 
 @media (min-width: 768px) {
@@ -236,7 +258,18 @@ section#Documentation .section-heading {
     height: 100px;
     margin-left: -50px;
   }
+    .docu > li .docuImg2 {
+    left: 50%;
+    width: 100px;
+    height: 100px;
+    margin-left: -50px;
+  }
   .docu > li .docuImg h4, .docu > li .docuImg .h4 {
+    font-size: 13px;
+    line-height: 18px;
+    margin-top: 16px;
+  }
+    .docu > li .docuImg2 h4, .docu > li .docuImg2 .h4 {
     font-size: 13px;
     line-height: 18px;
     margin-top: 16px;
@@ -264,6 +297,11 @@ section#Documentation .section-heading {
     line-height: 26px;
     margin-top: 30px;
   }
+    .docu > li .docuImg2 h4, .docu > li .docuImg2 .h4 {
+    font-size: 18px;
+    line-height: 26px;
+    margin-top: 30px;
+  }
   .docu > li.docuInverted > .docuPanel {
     padding: 0 20px 20px;
   }
@@ -280,19 +318,33 @@ section#Documentation .section-heading {
     height: 170px;
     margin-left: -85px;
   }
+    .docu > li .docuImg2 {
+    width: 300px;
+    height: 300px;
+    margin-left: 100px;
+    margin-bottom: 100px;
+  }
   .docu > li .docuImg h4, .docu > li .docuImg .h4 {
+    margin-top: 40px;
+  }
+    .docu > li .docuImg2 h4, .docu > li .docuImg2 .h4 {
     margin-top: 40px;
   }
   .docu > li.docuInverted > .docuPanel {
     padding: 0 100px 20px 20px;
   }
+  .docu > li .docuImg2 .img{
+    width: 175%;
+    height: 70%;
+  }
 }
 
-
 section#contact {
-  background-color: #212529;
-  background-repeat: no-repeat;
+  background-image: url("./../media/suelo.jpg");
   background-position: center;
+  background-attachment: contain;
+  background-size: 100vw 100vh;
+  background-repeat: no-repeat;
   padding-bottom: 10rem;
   padding-top: 10rem;
   font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -360,7 +412,7 @@ section#Us{
 .btn-check[disabled] + .btn, .btn-check:disabled + .btn {
   pointer-events: none;
   filter: none;
-  opacity: 0.65;
+  opacity: 0.90;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -371,11 +423,11 @@ section#Us{
 
 ::-webkit-input-placeholder{
     color:  #a8a8a8;
-  }
-  ::-webkit-textare-placeholder{
+}
+::-webkit-textare-placeholder{
     color:  #a8a8a8;
-  }
+}
 
-  span{
+span{
     color: red;
-  }
+}
